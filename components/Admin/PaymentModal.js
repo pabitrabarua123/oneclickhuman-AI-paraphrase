@@ -29,8 +29,8 @@ const PaymentModal = ({paymentFilter, setPaymentFilter, setPaymentFilterPopup, f
               <input type="date" name="end_date" value={paymentFilter.end_date} onChange={(e) => setPaymentFilter({...paymentFilter, end_date: e.target.value})} />              
             </div>
             <div className="inputBox">
-              <label>Date</label>
-              <select className="form-select" value={userFilter.payment_type} onChange={(e) => setUserFilter({...userFilter, payment_type: e.target.value})}>
+              <label>User Type</label>
+              <select className="form-select" value={paymentFilter.payment_type} onChange={(e) => setPaymentFilter({...paymentFilter, payment_type: e.target.value})}>
                 <option value="Subscriber">Subscriber</option>
                 <option value="Lifetime">Lifetime/One time</option>
               </select>              

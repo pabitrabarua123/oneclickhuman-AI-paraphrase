@@ -115,6 +115,9 @@ const [paymentFilter, setPaymentFilter] = useState({
 const filterPayment = (e) => {
   e.preventDefault();
   setPaymentFilter({...paymentFilter, filter_applied: true, filter_progress: true});
+
+  console.log(paymentFilter);
+  return;
   
   fetch('https://oneclickhuman.com/api_request/get_payments', {
      mode:'cors', 

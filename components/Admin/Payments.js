@@ -107,6 +107,7 @@ const [PaymentFilterPopup, setPaymentFilterPopup] = useState(false);
 const [paymentFilter, setPaymentFilter] = useState({
     start_date: '',
     end_date: '',
+    payment_type: '',
     filter_progress: false,
     filter_applied: false, 
 });
@@ -122,6 +123,7 @@ const filterPayment = (e) => {
        'user_id' : userData.user_id,
        'start_date' : paymentFilter.start_date,
        'end_date' : paymentFilter.end_date,
+       'payment_type' : paymentFilter.payment_type,
        'filter' : true,
      }),
      headers: {

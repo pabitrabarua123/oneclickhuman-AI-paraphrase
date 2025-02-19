@@ -28,6 +28,13 @@ const PaymentModal = ({paymentFilter, setPaymentFilter, setPaymentFilterPopup, f
               <label>End Date</label>
               <input type="date" name="end_date" value={paymentFilter.end_date} onChange={(e) => setPaymentFilter({...paymentFilter, end_date: e.target.value})} />              
             </div>
+            <div className="inputBox">
+              <label>Date</label>
+              <select className="form-select" value={userFilter.payment_type} onChange={(e) => setUserFilter({...userFilter, payment_type: e.target.value})}>
+                <option value="Subscriber">Subscriber</option>
+                <option value="Lifetime">Lifetime/One time</option>
+              </select>              
+            </div>
             <button onClick={filterPayment} className="btn-default round">
               {paymentFilter.filter_progress ? 'Filtering payments...' : 'Apply Filter'}
             </button>

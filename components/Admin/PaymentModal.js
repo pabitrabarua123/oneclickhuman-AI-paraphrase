@@ -31,7 +31,7 @@ const PaymentModal = ({paymentFilter, setPaymentFilter, setPaymentFilterPopup, f
             <div className="inputBox">
               <label>User Type</label>
               <select className="form-select" value={paymentFilter.payment_type} onChange={(e) => setPaymentFilter({...paymentFilter, payment_type: e.target.value})}>
-                <option value="Subscriber" selected>Subscriber</option>
+                <option value="Subscriber">Subscriber</option>
                 <option value="Lifetime">Lifetime/One time</option>
               </select>              
             </div>

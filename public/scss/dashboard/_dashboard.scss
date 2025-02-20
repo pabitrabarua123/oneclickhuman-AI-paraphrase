@@ -2477,6 +2477,14 @@ div#content-generator div#result, div#content-generator div#result p {
       @media only screen and (max-width: 600px) {
         div#content-generator div#right-bottom {
             width: 100%;
+            height: 110px;
+            div {
+                display: block;
+                button {
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                }
+            }
         }
         div#content-generator div#right-bottom div {
             margin-top: unset !important;

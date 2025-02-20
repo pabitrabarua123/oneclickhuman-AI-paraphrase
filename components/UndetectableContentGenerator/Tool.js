@@ -612,7 +612,7 @@ export const Tool = ({userData}) => {
              <div id="result" contentEditable={true} suppressContentEditableWarning={true} dangerouslySetInnerHTML={{__html: paraphrasedText}} />
            </div>
            <div id="right-bottom">
-              <div style={{display: 'flex', width: '100%', marginTop: '10px', gap: '20px', paddingLeft: '15px'}}>
+              <div style={{display: 'flex', width: '100%', marginTop: '20px', gap: '10px', paddingLeft: '15px'}}>
                 <span className="tooltip" onClick={copyContent}><i className="feather-copy"></i><span className="tooltiptext">Copy</span></span>
                 { GenerationComplete &&
                   <>

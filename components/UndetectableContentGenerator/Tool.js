@@ -497,6 +497,30 @@ export const Tool = ({userData}) => {
     selectText('result');
   }
 
+    const [ai_check, setAiCheck] = useState(null);
+    const [ai_check_request, setAiCheckRequest] = useState(false);
+    const checkAI = () => {
+      setAiCheckRequest(true);
+      const content = document.getElementById('result').innerHTML;
+      setParaphrasedText(content);
+      fetch('https://oneclickhuman.com/api_request/check_ai_presence', {
+        mode:'cors', 
+        method: 'POST',
+          body: JSON.stringify({
+          'user' : userData.user_id,
+          'content' : content
+        }),
+        headers: {
+         'Content-type': 'application/json; charset=UTF-8',
+        }
+      }).then(res => res.json())
+        .then((json) => {
+           console.log(json);  
+           setAiCheck(json.res);
+           setAiCheckRequest(false);
+        })
+      }
+
    return(
     <>
     <div id='tool'>
@@ -594,6 +618,25 @@ export const Tool = ({userData}) => {
                   <>
                    <button onClick={() => paraphrase2('shorten')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '100px'}}>{ request_process_1 === 1 ? <span class="dot-pulse"></span> : 'Shorten'}</button>
                    <button onClick={() => paraphrase2('rewrite')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '100px'}}>{ request_process_2 === 1 ? <span class="dot-pulse"></span> : 'Rewrite'}</button>
+                   <button 
+                  onClick={() => checkAI()} 
+                  className="btn-default btn-border"
+                  style={{
+                    height: "36px",
+                    fontSize: "13px",
+                    lineHeight: "20px",
+                    padding: "0px 15px",
+                    marginRight: "10px",
+                    marginLeft: "auto",
+                    background: "#7064e9",
+                    color: "#fff"
+                  }}
+                  disabled={ai_check_request}>
+                    {ai_check_request ? 'Checking...' : 'Check for AI'}
+                 </button>
+                 { request_process === 0 && ai_check !== null &&
+                   <span id="ai-percentage" style={{ lineHeight: "15px", marginTop: "11px" }}>AI Percentage: {ai_check}</span>
+                 }
                   </>
                 }
               </div>

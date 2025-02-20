@@ -612,12 +612,12 @@ export const Tool = ({userData}) => {
              <div id="result" contentEditable={true} suppressContentEditableWarning={true} dangerouslySetInnerHTML={{__html: paraphrasedText}} />
            </div>
            <div id="right-bottom">
-              <div style={{display: 'flex', width: '100%', marginTop: '20px', gap: '20px', paddingLeft: '15px'}}>
+              <div style={{display: 'flex', width: '100%', marginTop: '10px', gap: '20px', paddingLeft: '15px'}}>
                 <span className="tooltip" onClick={copyContent}><i className="feather-copy"></i><span className="tooltiptext">Copy</span></span>
                 { GenerationComplete &&
                   <>
-                   <button onClick={() => paraphrase2('shorten')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '100px'}}>{ request_process_1 === 1 ? <span class="dot-pulse"></span> : 'Shorten'}</button>
-                   <button onClick={() => paraphrase2('rewrite')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '100px'}}>{ request_process_2 === 1 ? <span class="dot-pulse"></span> : 'Rewrite'}</button>
+                   <button onClick={() => paraphrase2('shorten')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '85px'}}>{ request_process_1 === 1 ? <span class="dot-pulse"></span> : 'Shorten'}</button>
+                   <button onClick={() => paraphrase2('rewrite')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '85px'}}>{ request_process_2 === 1 ? <span class="dot-pulse"></span> : 'Rewrite'}</button>
                    <button 
                   onClick={() => checkAI()} 
                   className="btn-default btn-border"
@@ -635,7 +635,7 @@ export const Tool = ({userData}) => {
                     {ai_check_request ? 'Checking...' : 'Check for AI'}
                  </button>
                  { request_process === 0 && ai_check !== null &&
-                   <span id="ai-percentage" style={{ lineHeight: "15px", marginTop: "11px" }}>AI Percentage: {ai_check}</span>
+                   <span id="ai-percentage" style={{ lineHeight: "15px", marginTop: "11px", marginRight: '6px' }}>{ai_check}% AI</span>
                  }
                   </>
                 }

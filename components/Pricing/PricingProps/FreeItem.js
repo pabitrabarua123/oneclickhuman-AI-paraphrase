@@ -21,11 +21,6 @@ export default function FreeItem({parentClass, incresePrice, subsCriptionStatus,
                 </div>
       
                 <div className="separator-animated animated-true mt--30 mb--30"></div>
-                { subsCriptionStatus === 0 && oneTimePlan === 0 &&
-                  <div style={{textAlign: 'center', marginBottom: '35px'}}>
-                    <span className="current-plan">Current Plan</span>
-                  </div>
-                }
               </div>
       
               <div className="pricing-body">
@@ -42,7 +37,15 @@ export default function FreeItem({parentClass, incresePrice, subsCriptionStatus,
       
             <div className="pricing-footer">
               { session ?
-                <a className="btn-default" href="/humanizer">Get Started</a>
+                <>
+                { subsCriptionStatus === 0 && oneTimePlan === 0 ?
+                  <div style={{textAlign: 'center', marginBottom: '35px'}}>
+                    <span className="current-plan">Current Plan</span>
+                  </div>
+                  :
+                  <a className="btn-default" href="/humanizer">Get Started</a>
+                }
+                </>
                 :
                 <a className="btn-default" href="/signup">Get Started</a>
               }

@@ -784,8 +784,11 @@ export const Tool = ({userData}) => {
                     height: "34px",
                     fontSize: "12px",
                     lineHeight: "20px",
-                    padding: "0 15px",
-                    marginRight: "10px"
+                    padding: "0px 15px",
+                    marginRight: "10px",
+                    marginLeft: "auto",
+                    background: "#7064e9",
+                    color: "#fff"
                   }}
                   disabled={ai_check_request}>
                     {ai_check_request ? 'Checking...' : 'Check for AI'}

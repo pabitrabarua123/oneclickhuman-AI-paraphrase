@@ -104,12 +104,14 @@ const Nav = () => {
             <Link href="/signin" className={isActive('/signin') ? "active" : ""}>Sign In</Link>
            </li>
         }
-                { (isActive('/humanizer') || isActive('/account') || isActive('/undetectable-content-generator')) &&
+        
+        { (isActive('/humanizer') || isActive('/account') || isActive('/undetectable-content-generator')) &&
          <li className="with-megamenu has-menu-child-item position-relative">
           <a
             href="#"
             onClick={() => setShowPage(!showPage)}
             className={`${!showPage ? "open" : ""}`}
+            style={{color: '#ff3bd4'}}
           >
           { user_data.subscrption_status === 1 && user_data.credits_availbe > 0 ? 
             user_data.credits_availbe :

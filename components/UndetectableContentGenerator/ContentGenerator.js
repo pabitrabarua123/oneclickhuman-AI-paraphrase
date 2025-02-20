@@ -34,7 +34,13 @@ const ContentGenerator = ({userData}) => {
             <div className="chat-box author-speech">
               <div className="inner" id="content-generator">
                  { userData.email_verification === true ?
-                   <Tool userData={userData}/> 
+                   <>
+                   { userData.subscrption_status > 0 || userData.onetime_credit > 0 ?
+                     <Tool userData={userData}/> 
+                     : 
+                     <p>Sorry, you do not have access to this feature.<a style={{color: '#7064e9'}} href='/pricing'>Upgrade account </a></p>
+                   } 
+                   </>
                    :
                    <p>Using Undetectable Content Generator needs Email to be verified, please go to your inbox and verify.</p>
                  }

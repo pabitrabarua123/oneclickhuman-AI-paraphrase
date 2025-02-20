@@ -82,7 +82,7 @@ const TextGeneratorPage = () => {
                 <div className="content-page">
                   { !user_data.loading &&
                     <>
-                      { days_difference > 14 && user_data.subscrption_status === 0 && user_data.onetime_plan === 0 ?
+                      { days_difference > 7 && user_data.subscrption_status === 0 && user_data.onetime_plan === 0 ?
                         <div style={{marginTop: '100px'}}>
                           <h3>*Your trial period has ended*</h3>
                           <p>Upgrade now to continue enjoying all the amazing features. Contact us if you have any questions or need assistance with upgrading!</p>

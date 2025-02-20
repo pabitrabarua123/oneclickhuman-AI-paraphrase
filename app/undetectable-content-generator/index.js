@@ -76,10 +76,10 @@ const UndetectableContentGenerator = () => {
                   <div className="content-page">
                     { !user_data.loading &&
                     <>
-                      { days_difference > 14 && user_data.subscrption_status === 0 && user_data.onetime_plan === 0 ?
+                      { days_difference > 7 && user_data.subscrption_status === 0 && user_data.onetime_plan === 0 ?
                         <div style={{marginTop: '100px'}}>
-                          <h3>Your trial is over!</h3>
-                          <p>Please check our attractive subscription and lifetime plans. <a style={{color: '#7064e9'}} href='/pricing'>See Pricing</a></p>
+                          {/* <h3>Your trial is over!</h3> */}
+                          <p>Sorry, you do not have access to this feature. <a style={{color: '#7064e9'}} href='/pricing'>Upgrade account</a></p>
                         </div> :
                         <ContentGenerator userData={user_data}/>
                       }

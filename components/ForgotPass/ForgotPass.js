@@ -158,7 +158,7 @@ const ForgotPass = () => {
                        onChange={(e) => setForgotPassEmail(e.target.value)} 
                     />
                   </div>
-                  <button type="button" onClick={sendOTP} className="btn-default" disabled={forgot_pass_submit}>
+                  <button type="button" onClick={sendOTP} className="btn-default round" disabled={forgot_pass_submit}>
                   {forgot_pass_submit ? "Sending..." : "Send OTP"}
                   </button>
                 </form>
@@ -204,7 +204,7 @@ const ForgotPass = () => {
                        onChange={(e) => setResetPassConfirm(e.target.value)} 
                     />
                   </div>
-                  <button type="button" onClick={handleResetPassword} className="btn-default" disabled={reset_pass_submit}>
+                  <button type="button" onClick={handleResetPassword} className="btn-default round" disabled={reset_pass_submit}>
                   {reset_pass_submit ? "Submitting..." : "Submit"}
                   </button>
                 </form>

@@ -68,9 +68,9 @@ const OnetimePrice = ({ data, incresePrice, parentClass }) => {
                     <input type="hidden" name="onetime_purchase" value={data.price_id} />
                     <input type="hidden" name="promocode" value="PAB50BA" />
                     { session ? 
-                      <button className="btn-default btn-border" style={{display: 'inline-block'}} type="submit">Purchase</button>
+                      <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="submit">Purchase</button>
                        :
-                      <button className="btn-default btn-border" type="button" style={{display: 'inline-block'}} onClick={() => router.push('/signin')}>Purchase</button>
+                      <button className="btn-default btn-border round" type="button" style={{display: 'inline-block'}} onClick={() => router.push('/signin')}>Purchase</button>
                     }
                   </form>
                  </div>

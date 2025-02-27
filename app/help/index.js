@@ -19,9 +19,9 @@ const HelpPage = () => {
         <Context>
           <HeaderTop />
           <Header
-            headerTransparent="header-transparent"
+            headerTransparent="header-not-transparent"
             headerSticky="header-sticky"
-            btnClass="rainbow-gradient-btn"
+            btnClass="btn-small round"
           />
           <PopupMobileMenu />
           <Breadcrumb title="Help" text="Help" />

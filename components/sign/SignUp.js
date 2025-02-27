@@ -174,7 +174,7 @@ const SignUp = () => {
                        value={cnf_password}
                        onChange={(e) => setCnfPassword(e.target.value)} />
                   </div>
-                  <button type="submit" className="btn-default" disabled={submitting}>
+                  <button type="submit" className="btn-default round" disabled={submitting}>
                   {!submitting && !account_created && "Sign up"}
                   {submitting && "Creating account..."}
                   {account_created && "Waiting for verification"}

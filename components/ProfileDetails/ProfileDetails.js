@@ -132,8 +132,8 @@ const ProfileDetails = ({account_status, router, dispatch}) => {
              <div id="delete-popup-inner">
                <p>Are you sure you want to cancel the subscription?</p>
                <div>
-                <button className="btn-default" onClick={() => setCancelSubscriptionPopupConfirmation(true)}>Yes</button> 
-                <button className="btn-default" onClick={() => setCancelSubscriptionPopup(false)} style={{marginLeft: '20px'}}>No</button>
+                <button className="btn-default round" onClick={() => setCancelSubscriptionPopupConfirmation(true)}>Yes</button> 
+                <button className="btn-default round" onClick={() => setCancelSubscriptionPopup(false)} style={{marginLeft: '20px'}}>No</button>
                </div>
               </div>
             </div>
@@ -148,8 +148,8 @@ const ProfileDetails = ({account_status, router, dispatch}) => {
                 <input value={cancelValue} onChange={(e) => setCancelValue(e.target.value)} type="text" style={{border: '1px solid #7064e9'}}/>
                </div>
                <div>
-                <button className="btn-default" onClick={cancelSubscription}>Confirm Cancelation</button> 
-                <button className="btn-default" onClick={() => setCancelSubscriptionPopupConfirmation(false)} style={{marginLeft: '20px'}}>Back</button>
+                <button className="btn-default round" onClick={cancelSubscription}>Confirm Cancelation</button> 
+                <button className="btn-default round" onClick={() => setCancelSubscriptionPopupConfirmation(false)} style={{marginLeft: '20px'}}>Back</button>
                </div>
               </div>
             </div>

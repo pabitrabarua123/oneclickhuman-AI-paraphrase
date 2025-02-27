@@ -149,7 +149,7 @@ const handleSubmit = async (e) => {
                       <span>Forgot password</span>
                     </Link>
                   </div>
-                  <button type="submit" className="btn-default" disabled={submitting}>
+                  <button type="submit" className="btn-default round" disabled={submitting}>
                   {submitting ? "Signing in..." : "Sign In"}
                   </button>
                 </form>

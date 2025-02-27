@@ -43,11 +43,11 @@ export default function FreeItem({parentClass, incresePrice, subsCriptionStatus,
                     <span className="current-plan">Current Plan</span>
                   </div>
                   :
-                  <a className="btn-default" href="/humanizer">Get Started</a>
+                  <a className="btn-default round" href="/humanizer">Get Started</a>
                 }
                 </>
                 :
-                <a className="btn-default" href="/signup">Get Started</a>
+                <a className="btn-default round" href="/signup">Get Started</a>
               }
             </div>
       

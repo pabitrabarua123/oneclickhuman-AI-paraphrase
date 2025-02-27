@@ -189,7 +189,7 @@ export const Tool = ({userData}) => {
    const [paraphrasedText, setParaphrasedText] = useState('');
    let msgCnt = 0;
    var source;
-   const free_word_limit = 750;
+   const free_word_limit = 325;
    const [TextBottomRight, setTextBottomRight] = useState(false);
 
    function paraphrase2() {
@@ -779,7 +779,7 @@ export const Tool = ({userData}) => {
                 <span className="tooltip" onClick={copyContent}><i className="feather-copy"></i><span className="tooltiptext">Copy</span></span>
                 <button 
                   onClick={() => checkAI()} 
-                  className="btn-default btn-border"
+                  className="btn-default btn-border round"
                   style={{
                     height: "36px",
                     fontSize: "13px",

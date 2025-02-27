@@ -98,7 +98,7 @@ const CreateEnquire = (e)=>{
             name="submit"
             type="submit"
             id="submit"
-            className="btn-default btn-large rainbow-btn"
+            className="btn-default btn-large rainbow-btn round"
             disabled={enquire.submit}
           >
             <span>Submit Now</span>

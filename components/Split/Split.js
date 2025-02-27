@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Undetectable from "../../public/images/Undetectable.png";
+import Undetectable2 from "../../public/images/Undetectable2.png";
 
 const Split = () => {
   return (
@@ -15,7 +15,7 @@ const Split = () => {
                   <div className="thumbnail">
                     <Image
                       className="radius"
-                      src={Undetectable}
+                      src={Undetectable2}
                       alt="Undetectable"
                     />
                   </div>
@@ -54,7 +54,7 @@ const Split = () => {
                       data-sal-duration="400"
                       data-sal-delay="400"
                     >
-                      <Link className="btn-default" href="/contact">
+                      <Link className="btn-default round" href="/contact">
                         Contact Us
                       </Link>
                     </div>

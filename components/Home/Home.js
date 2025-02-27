@@ -56,7 +56,7 @@ const Home = () => {
                 <div className="button-group">
                   { user_signedIn ?
                   <Link
-                    className="btn-default bg-light-gradient btn-large"
+                    className="btn-default bg-light-gradient btn-large round"
                     href="/humanizer"
                   >
                     <div className="has-bg-light"></div>
@@ -64,7 +64,7 @@ const Home = () => {
                   </Link>
                     :
                   <Link
-                    className="btn-default bg-light-gradient btn-large"
+                    className="btn-default bg-light-gradient btn-large round"
                     href="/signin"
                   >
                     <div className="has-bg-light"></div>

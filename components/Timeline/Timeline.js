@@ -92,11 +92,11 @@ const Timeline = () => {
 
       <div className="button-group mt--50 text-center">
               { user_signedIn ?
-                <Link className="btn-default btn-large" href="/humanizer">
+                <Link className="btn-default btn-large round" href="/humanizer">
                   Try OneClickHuman Free
                 </Link>
                 :
-                <Link className="btn-default btn-large" href="/signup">
+                <Link className="btn-default btn-large round" href="/signup">
                  Try OneClickHuman Free
                 </Link>
               }

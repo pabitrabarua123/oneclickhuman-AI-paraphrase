@@ -94,14 +94,14 @@ const SinglePrice = ({ data, incresePrice, parentClass, monthlyPlan, subscrption
                     <input type="hidden" name="subscription" value={data.price_id} />
                     <input type="hidden" name="promocode" value="PAB50BA" />
                     { !session &&
-                      <button className="btn-default btn-border" type="button" style={{display: 'inline-block'}} onClick={() => ContactSales(data.title)}>{data.title === 'Enterprise' ? 'Contact Sales': 'Purchase'}</button>
+                      <button className="btn-default btn-border round" type="button" style={{display: 'inline-block'}} onClick={() => ContactSales(data.title)}>{data.title === 'Enterprise' ? 'Contact Sales': 'Purchase'}</button>
                     }
                     { monthlyPlan === 0 && session ?
                      <>
                       { data.title === 'Enterprise' ?
-                        <button className="btn-default btn-border" style={{display: 'inline-block'}} type="button" onClick={() => router.push('/help')}>Contact Sales</button>
+                        <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="button" onClick={() => router.push('/help')}>Contact Sales</button>
                         :
-                        <button className="btn-default btn-border" style={{display: 'inline-block'}} type="submit">Purchase</button>
+                        <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="submit">Purchase</button>
                       }
                      </>
                     : ''
@@ -109,13 +109,13 @@ const SinglePrice = ({ data, incresePrice, parentClass, monthlyPlan, subscrption
                     { monthlyPlan > 0 &&
                      <>
                       {data.title === 'Enterprise' ?
-                       <button className="btn-default btn-border" style={{display: 'inline-block'}} type="button" onClick={() => router.push('/help')}>Contact Sales</button>
+                       <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="button" onClick={() => router.push('/help')}>Contact Sales</button>
                        : 
                        <>
                        { subscrptionID !== '' ?
-                         <button className="btn-default btn-border" style={{display: 'inline-block'}} type="submit">Upgrade</button>
+                         <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="submit">Upgrade</button>
                          :
-                         <button className="btn-default btn-border" style={{display: 'inline-block'}} type="button" onClick={() => alert('Sorry your current plan can not be changed, please contact support.')}>Upgrade</button>
+                         <button className="btn-default btn-border round" style={{display: 'inline-block'}} type="button" onClick={() => alert('Sorry your current plan can not be changed, please contact support.')}>Upgrade</button>
                        }
                       </>
                       }

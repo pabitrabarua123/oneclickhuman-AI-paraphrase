@@ -187,7 +187,7 @@ const ProfileBody = ({user}) => {
 
                 <div className="col-12 mt--20">
                   <div className="form-group mb--0">
-                    <button type="submit" className="btn-default">
+                    <button type="submit" className="btn-default round">
                       Update Email
                     </button>
                   </div>
@@ -251,7 +251,7 @@ const ProfileBody = ({user}) => {
                 </div>
                 <div className="col-12 mt--20">
                   <div className="form-group mb--0">
-                    <button className="btn-default" type="submit">
+                    <button className="btn-default round" type="submit">
                       Update Password
                     </button>
                   </div>
@@ -282,7 +282,7 @@ const ProfileBody = ({user}) => {
                 </div>
                 <div className="col-12 mt--20">
                   <div className="form-group mb--0">
-                    <button className="btn-default" onClick={() => setDeleteAccModal(true)} type="button">
+                    <button className="btn-default round" onClick={() => setDeleteAccModal(true)} type="button">
                       <i className="feather-trash-2"></i> Delete Accont
                     </button>
                   </div>
@@ -304,8 +304,8 @@ const ProfileBody = ({user}) => {
                 <input value={deleteValue} onChange={(e) => setDeleteValue(e.target.value)} type="text" style={{border: '1px solid #7064e9'}}/>
                </div>
                <div>
-                <button className="btn-default" onClick={() => setDeleteAccModal(false)}>Cancel</button>
-                <button className="btn-default" onClick={deleteAccount} style={{marginLeft: '20px'}}>Delete</button> 
+                <button className="btn-default round" onClick={() => setDeleteAccModal(false)}>Cancel</button>
+                <button className="btn-default round" onClick={deleteAccount} style={{marginLeft: '20px'}}>Delete</button> 
                </div>
               </div>
             </div>

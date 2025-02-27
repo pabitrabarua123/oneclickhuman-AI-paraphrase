@@ -121,7 +121,7 @@ export const Tool = ({userData}) => {
    const [paraphrasedText, setParaphrasedText] = useState('');
    let msgCnt = 0;
    var source;
-   const free_word_limit = 300;
+   const free_word_limit = 325;
 
   useEffect(() => {
     var countWord = getCount(textInput);
@@ -620,7 +620,7 @@ export const Tool = ({userData}) => {
                    <button onClick={() => paraphrase2('rewrite')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '85px'}}>{ request_process_2 === 1 ? <span class="dot-pulse"></span> : 'Rewrite'}</button>
                    <button 
                   onClick={() => checkAI()} 
-                  className="btn-default btn-border"
+                  className="btn-default btn-border round"
                   style={{
                     height: "36px",
                     fontSize: "13px",

@@ -56,7 +56,7 @@ const ContactForm = () => {
             name="submit"
             type="submit"
             id="submit"
-            className="btn-default btn-large rainbow-btn"
+            className="btn-default btn-large rainbow-btn round"
           >
             <span>Submit Now</span>
           </button>

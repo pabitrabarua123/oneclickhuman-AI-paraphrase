@@ -72,7 +72,12 @@ const ProfileBody = ({user}) => {
 
  const [delete_acc_modal, setDeleteAccModal] = useState(false);
  const [is_account_deleted, setAccountDeleted] = useState(false);
+ const [deleteValue, setDeleteValue] = useState("");
  const deleteAccount = () => {
+  if(deleteValue !== 'DELETE'){
+    alert('Please type "DELETE" in the box');
+    return;
+  }
   fetch('https://oneclickhuman.com/api_request/delete_account', {
     mode:'cors', 
     method: 'POST',
@@ -294,7 +299,10 @@ const ProfileBody = ({user}) => {
             <div id="delete-popup">
             <div id="delete-popup-main">
              <div id="delete-popup-inner">
-               <p>Are you sure to delete your account?</p>
+             <div class="form-group">
+                <label for="currentpassword">Please type "DELETE" in the box</label>
+                <input value={deleteValue} onChange={(e) => setDeleteValue(e.target.value)} type="text" style={{border: '1px solid #7064e9'}}/>
+               </div>
                <div>
                 <button className="btn-default" onClick={() => setDeleteAccModal(false)}>Cancel</button>
                 <button className="btn-default" onClick={deleteAccount} style={{marginLeft: '20px'}}>Delete</button> 

@@ -63,7 +63,7 @@ const Service2 = () => {
                     href="/humanizer"
                   >
                     <div className="has-bg-light"></div>
-                    <span>Try OneClickHuman Free</span>
+                    <span>Try for Free</span>
                   </Link>
                     :
                   <Link
@@ -71,7 +71,7 @@ const Service2 = () => {
                     href="/signup"
                   >
                     <div className="has-bg-light"></div>
-                    <span>Try OneClickHuman Free</span>
+                    <span>Try for Free</span>
                   </Link>
                   }
                   <Link

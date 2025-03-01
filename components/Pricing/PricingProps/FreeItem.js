@@ -27,7 +27,7 @@ export default function FreeItem({parentClass, incresePrice, subsCriptionStatus,
                 <ul className="list-style--1">
                   <li><i className="feather-check-circle pe-2"></i>10,500 Words during trial period</li>
                   <li><i className="feather-check-circle pe-2"></i>Maintain Formatting</li>
-                  <li><i className="feather-check-circle pe-2"></i>1500 Word Daily limit, 750 word per article</li>
+                  <li><i className="feather-check-circle pe-2"></i>1500 Word Daily limit, 325 word per article</li>
                   <li><i className="feather-check-circle pe-2"></i>Beat ZeroGPT Detector</li>
                   <li><i className="feather-check-circle pe-2"></i>10+ Languages</li>
                   <li><i className="feather-check-circle pe-2"></i>Email Support</li>

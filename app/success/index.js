@@ -19,6 +19,8 @@ const SuccessPage = () => {
   const [sub_amnt, setSubAmount] = useState(0);
   const [success_currency, setSuccessCurrency] = useState('');
   const [IsSubscriptionPlan, setIsSubscriptionPlan] = useState(false);
+  const [is_loading, setLoading] = useState(true);
+  const [payment_success, setPaymentSuccess] = useState(false);
   
   useEffect(() => {
     const updatePayment = async () => {
@@ -30,6 +32,7 @@ const SuccessPage = () => {
       let currency = searchParams.get('currency');
   
       if(param === 'true'){
+        setPaymentSuccess(true);
         setSubCredits(subcrdt);
         setSubAmount(subamnt);
         setSuccessCurrency(currency);
@@ -39,23 +42,27 @@ const SuccessPage = () => {
           setIsSubscriptionPlan(false);
        }
   
-      // fetch('https://oneclickhuman.com/api_request/update_payment_react', {
-      //   mode:'cors', 
-      //   method: 'POST',
-      //   body: JSON.stringify({
-      //     'email' : session.user.user_email,
-      //     'plan' : subcrdt,
-      //     'subscription' : subscriptionPlan,
-      //     'currency' : currency,
-      //     'amnt' : subamnt,
-      //   }),
-      //   headers: {
-      //      'Content-type': 'application/json; charset=UTF-8',
-      //   }
-      // }).then(res => res.json())
-      //   .then((json) => {
-      //      console(json.status);
-      // });
+      fetch('https://oneclickhuman.com/api_request/update_payment_react', {
+        mode:'cors', 
+        method: 'POST',
+        body: JSON.stringify({
+          'email' : session.user.user_email,
+          'plan' : subcrdt,
+          'subscription' : subscriptionPlan,
+          'currency' : currency,
+          'amnt' : subamnt,
+        }),
+        headers: {
+           'Content-type': 'application/json; charset=UTF-8',
+        }
+      }).then(res => res.json())
+        .then((json) => {
+           console(json.status);
+           setLoading(false);
+      });
+     }else{
+        setLoading(false);
+        setPaymentSuccess(false);
      }
     }
     updatePayment();
@@ -82,23 +89,40 @@ const SuccessPage = () => {
               >
                <div className="row">
                  <div className="col-md-6">
+
+{is_loading ? 'Getting payment status...' : 
+ <>
+   { payment_success ?
                   <div className="success-left">
-                    <h3>Payment Successful</h3>
-                    <p>Congratulations, we have received your payment, please find the details of your purchase below.</p>
-                    <div id="succ-table">
-                      <div id="table-head">
-                        <p><b>Details</b></p>
-                        <p><b>Words</b></p>
-                        <p><b>Amount</b></p>
-                      </div>
-                      <div id="table-content">
-                       <p>{IsSubscriptionPlan === true ? 'Monthly Membership' : 'Onetime plan'}</p>
-                       <p>{sub_credits*1000} {IsSubscriptionPlan === true ? '/Month' : ''}</p>
-                       <p>{success_currency}{sub_amnt}</p>
-                      </div>
-                      <a className="btn-default" href="/humanizer">Go to tool</a>
+                  <h3>Payment Successful</h3>
+                  <p>Congratulations, we have received your payment, please find the details of your purchase below.</p>
+                  <div id="succ-table">
+                    <div id="table-head">
+                      <p><b>Details</b></p>
+                      <p><b>Words</b></p>
+                      <p><b>Amount</b></p>
                     </div>
+                    <div id="table-content">
+                     <p>{IsSubscriptionPlan === true ? 'Monthly Membership' : 'Onetime plan'}</p>
+                     <p>{sub_credits*1000} {IsSubscriptionPlan === true ? '/Month' : ''}</p>
+                     <p>{success_currency}{sub_amnt}</p>
+                    </div>
+                    <a className="btn-default" href="/humanizer">Go to tool</a>
                   </div>
+                </div>
+                :
+                <div className="success-left">
+                <h3>Payment Failed</h3>
+     
+                <div id="succ-table">
+                 
+                  <a className="btn-default" href="/humanizer">Go to tool</a>
+                </div>
+              </div>
+   }
+ </>
+}
+
                  </div>
                  <div className="col-md-6">
                   <div className="success-right">

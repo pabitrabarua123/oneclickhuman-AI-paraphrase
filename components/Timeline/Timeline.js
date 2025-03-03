@@ -50,7 +50,7 @@ const Timeline = () => {
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                <h2 className="title w-600 mb--20">
+                <h2 className="title w-600 mb--20 mt--50">
                 How It Works
                 </h2>
               </div>

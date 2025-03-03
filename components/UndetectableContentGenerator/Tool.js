@@ -618,7 +618,7 @@ export const Tool = ({userData}) => {
                   <>
                    <button onClick={() => paraphrase2('shorten')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '85px'}}>{ request_process_1 === 1 ? <span class="dot-pulse"></span> : 'Shorten'}</button>
                    <button onClick={() => paraphrase2('rewrite')} className="btn-default btn-small round" style={{height: '33px', lineHeight: '34px', padding: '0 20px', fontSize: '13px', width: '85px'}}>{ request_process_2 === 1 ? <span class="dot-pulse"></span> : 'Rewrite'}</button>
-                   <button 
+                   {/* <button 
                   onClick={() => checkAI()} 
                   className="btn-default btn-border round"
                   style={{
@@ -636,7 +636,7 @@ export const Tool = ({userData}) => {
                  </button>
                  { request_process === 0 && ai_check !== null &&
                    <span id="ai-percentage" style={{ lineHeight: "15px", marginTop: "11px", marginRight: '6px' }}>{ai_check}% AI</span>
-                 }
+                 } */}
                   </>
                 }
               </div>

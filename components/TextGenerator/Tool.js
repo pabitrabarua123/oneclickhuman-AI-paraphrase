@@ -777,7 +777,7 @@ export const Tool = ({userData}) => {
                  : ''
                }
                 <span className="tooltip" onClick={copyContent}><i className="feather-copy"></i><span className="tooltiptext">Copy</span></span>
-                <button 
+                {/* <button 
                   onClick={() => checkAI()} 
                   className="btn-default btn-border round"
                   style={{
@@ -795,7 +795,7 @@ export const Tool = ({userData}) => {
                  </button>
                  { request_process === 0 && ai_check !== null &&
                    <span id="ai-percentage" style={{ lineHeight: "15px", marginTop: "11px" }}>AI Percentage: {ai_check}</span>
-                 }
+                 } */}
               </div>
              </div>
              </>

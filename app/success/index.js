@@ -90,7 +90,7 @@ const SuccessPage = () => {
                <div className="row">
                  <div className="col-md-6">
 
-{is_loading ? 'Getting payment status...' : 
+{is_loading ? <p style={{fontSize: '20px', paddingTop: '100px', textAlign: 'center'}}>Getting payment status...</p> : 
  <>
    { payment_success ?
                   <div className="success-left">

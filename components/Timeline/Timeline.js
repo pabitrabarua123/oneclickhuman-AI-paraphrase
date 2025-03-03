@@ -59,7 +59,7 @@ const Timeline = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <div className="timeline-style-two">
-                { How_It_Works && <Image src={HowItWorks1} style={{width: '100%'}} alt="how-it-works"/> }
+                { How_It_Works && <Image src={HowItWorks1} id="how-it-work" alt="how-it-works"/> }
       {/* <div class="row text-center">
         <div class="col-md-4 mb-4">
           <div class="step">

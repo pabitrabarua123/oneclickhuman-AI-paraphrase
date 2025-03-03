@@ -8,7 +8,7 @@ import "venobox/dist/venobox.min.css";
 import TimnelineData from "../../data/home.json";
 import Link from "next/link";
 import { getSession } from "next-auth/react";
-import HowItWorks1 from "../../public/images/howitworks1.jpeg";
+import HowItWorks1 from "../../public/images/howitworks1.png";
 import Image from "next/image";
 import { useAppContext } from "@/context/Context";
 

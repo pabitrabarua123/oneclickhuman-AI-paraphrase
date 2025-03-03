@@ -8,7 +8,7 @@ import "venobox/dist/venobox.min.css";
 import TimnelineData from "../../data/home.json";
 import Link from "next/link";
 import { getSession } from "next-auth/react";
-import HowItWorks from "../../public/images/howitworks.png";
+import HowItWorks1 from "../../public/images/howitworks.jpg";
 import Image from "next/image";
 import { useAppContext } from "@/context/Context";
 
@@ -59,7 +59,7 @@ const Timeline = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <div className="timeline-style-two">
-                { How_It_Works && <Image src={HowItWorks} alt="how-it-works"/> }
+                { How_It_Works && <Image src={HowItWorks1} alt="how-it-works"/> }
       {/* <div class="row text-center">
         <div class="col-md-4 mb-4">
           <div class="step">

@@ -442,12 +442,12 @@ export const Tool = ({userData}) => {
               myCanvas.remove();  
            }, 1500);
   
-          /* fetch('https://oneclickhuman.com/api_request/add_record', {
+           fetch('https://oneclickhuman.com/api_request/add_record', {
                   mode:'cors', 
                   method: 'POST',
                   body: JSON.stringify({
-                    'user_id' : login.userID,
-                    'user_email' : login.user_email,
+                    'user_id' : userData.user_id,
+                    'user_email' : userData.user_email,
                     'mode' : mode.text,
                     'input' : filterText,
                     'output' : outputRes,
@@ -459,13 +459,13 @@ export const Tool = ({userData}) => {
                   }
                }).then(res => res.json())
                  .then((json) => {
-                      
-               }); */
+                     // console.log(json);
+               });
   
       }else{
   
              if(dt.msg !== undefined){
-              console.log('....nothing');
+            //  console.log('....nothing');
                   // let ms = dt.msg.replace(":", ",");
                   // ms = ms.replace(";", ".");
                   // ms = ms.replace("-", "");

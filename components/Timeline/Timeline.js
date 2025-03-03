@@ -42,7 +42,7 @@ const Timeline = () => {
     <>
       <div className="rainbow-timeline-area">
         <div className="container">
-          {/* <div className="row">
+          <div className="row">
             <div className="col-lg-12">
               <div
                 className="section-title text-center"
@@ -55,7 +55,7 @@ const Timeline = () => {
                 </h2>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <div className="timeline-style-two">

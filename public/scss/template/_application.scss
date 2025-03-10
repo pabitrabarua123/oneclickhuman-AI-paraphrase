@@ -4,6 +4,9 @@
 body {
     overflow-x: hidden;
 }
+.service.service__style--1:hover {
+    transform: translateY(0) !important;
+  }
 .advance-tab-four {
     position: relative;
     padding: 48px;

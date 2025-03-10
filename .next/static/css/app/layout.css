@@ -57586,7 +57586,7 @@ body.active-light-mode .slick-prev:before, body.active-light-mode .slick-next:be
   }
 }
 .service.service__style--1:hover {
-  /* transform: translateY(-5px); */
+  transform: translateY(-5px);
 }
 .service.service__style--1.rbt-border-none {
   border: none;
@@ -65688,6 +65688,10 @@ body.active-light-mode .rbt-utilize-area .rbt-default-sidebar-list li.has-submen
 /* Advance Tab Style Four  */
 body {
   overflow-x: hidden;
+}
+
+.service.service__style--1:hover {
+  transform: translateY(0) !important;
 }
 
 .advance-tab-four {

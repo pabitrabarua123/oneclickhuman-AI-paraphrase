@@ -57586,7 +57586,7 @@ body.active-light-mode .slick-prev:before, body.active-light-mode .slick-next:be
   }
 }
 .service.service__style--1:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
 }
 .service.service__style--1.rbt-border-none {
   border: none;
@@ -57847,6 +57847,10 @@ iframe {
     padding-top: 56.4%;
   }
 }
+#how-it-work {
+  width: 100%;
+}
+
 /*
     Card Styles  
 */
@@ -65682,6 +65686,10 @@ body.active-light-mode .rbt-utilize-area .rbt-default-sidebar-list li.has-submen
 }
 
 /* Advance Tab Style Four  */
+body {
+  overflow-x: hidden;
+}
+
 .advance-tab-four {
   position: relative;
   padding: 48px;

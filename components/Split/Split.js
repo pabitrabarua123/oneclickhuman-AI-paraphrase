@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Undetectable2 from "../../public/images/Undetectable2.png";
+import Undetectable3 from "../../public/images/Undetectable3.png";
 
 const Split = () => {
   return (
@@ -11,15 +11,6 @@ const Split = () => {
           <div className="rainbow-splite-style">
             <div className="split-wrapper">
               <div className="row g-0 radius-10 align-items-center">
-                <div className="col-lg-12 col-xl-6 col-12">
-                  <div className="thumbnail">
-                    <Image
-                      className="radius"
-                      src={Undetectable2}
-                      alt="Undetectable"
-                    />
-                  </div>
-                </div>
                 <div className="col-lg-12 col-xl-6 col-12">
                   <div className="split-inner">
                     <h4
@@ -58,6 +49,15 @@ const Split = () => {
                         Contact Us
                       </Link>
                     </div>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-xl-6 col-12">
+                  <div className="thumbnail">
+                    <Image
+                      className="radius"
+                      src={Undetectable3}
+                      alt="Undetectable"
+                    />
                   </div>
                 </div>
               </div>

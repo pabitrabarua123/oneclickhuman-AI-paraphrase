@@ -9,19 +9,19 @@ import sal from "sal.js";
 
 const ServiceItem = ({ ServiceData }) => {
   useEffect(() => {
-    sal();
+  //  sal();
 
-    const cards = document.querySelectorAll(".bg-flashlight");
+    // const cards = document.querySelectorAll(".bg-flashlight");
 
-    cards.forEach((bgflashlight) => {
-      bgflashlight.onmousemove = function (e) {
-        let x = e.pageX - bgflashlight.offsetLeft;
-        let y = e.pageY - bgflashlight.offsetTop;
+    // cards.forEach((bgflashlight) => {
+    //   bgflashlight.onmousemove = function (e) {
+    //     let x = e.pageX - bgflashlight.offsetLeft;
+    //     let y = e.pageY - bgflashlight.offsetTop;
 
-        bgflashlight.style.setProperty("--x", x + "px");
-        bgflashlight.style.setProperty("--y", y + "px");
-      };
-    });
+    //     bgflashlight.style.setProperty("--x", x + "px");
+    //     bgflashlight.style.setProperty("--y", y + "px");
+    //   };
+    // });
   }, []);
 
   return (
@@ -30,12 +30,9 @@ const ServiceItem = ({ ServiceData }) => {
         ServiceData.service.map((data, index) => (
           <div
             className="col-lg-4 col-md-6 col-sm-6 col-12"
-            data-sal="slide-up"
-            data-sal-duration="700"
-            data-sal-delay={`${data.delay}`}
             key={index}
           >
-            <div className="service service__style--1 bg-color-blackest radius mt--25 text-center rbt-border-none variation-4 bg-flashlight">
+            <div className="service service__style--1 bg-color-blackest radius mt--25 text-center rbt-border-none variation-4">
               <div className="icon">
                 { data.title === 'Multilingual Support' ? 
                 <Image src={LanguageIcon} style={{width: '45px'}}/>

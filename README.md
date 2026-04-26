@@ -3,7 +3,7 @@
 > Convert AI-generated content into human-like, undetectable text in one click.
 ## Project Overview
 
-OneClickHuman is a web application that transforms AI-generated content into natural, human-like text. It preserves formatting, corrects grammar, and helps bypass AI detectors such as ZeroGPT and GPTZero. The platform supports 10+ languages, offers SEO-friendly output, and is ideal for bloggers, marketers, and content creators.
+OneClickHuman is a web application that transforms AI-generated content into natural, human-like text. It preserves formatting, corrects grammar, and helps bypass AI detectors such as ZeroGPT and GPTZero. The platform supports 10+ languages, and is ideal for bloggers, marketers, and content creators.
 ## Core Features
 
 - **AI to Human Content Conversion**: Instantly humanize AI-generated text.

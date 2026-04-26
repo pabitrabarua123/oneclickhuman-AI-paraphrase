@@ -10,7 +10,6 @@ OneClickHuman is a web application that transforms AI-generated content into nat
 - **AI Detector Bypass**: Bypass tools like ZeroGPT.
 - **Multilingual Support**: 10+ languages supported in the editor.
 - **Lightning Mode**: Theme mode switching.
-- **Bulk Conversion**: (Coming soon) Convert multiple articles at once.
 - **Stripe Payments**: Secure subscription and payment processing with Stripe.
 - **User Authentication**: Secure login and subscription management.
 - **Role-based Dashboard**: Admin and user dashboards for management.

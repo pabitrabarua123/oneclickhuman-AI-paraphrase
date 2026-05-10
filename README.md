@@ -55,7 +55,3 @@ OneClickHuman is a web application that transforms AI-generated content into nat
 ## Deployment
 
 Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js. For custom domain and environment setup.
-
-## License
-
-This project is licensed. Please contact the author for details or see the LICENSE file if available.

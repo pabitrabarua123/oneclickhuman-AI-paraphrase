@@ -13,7 +13,7 @@ OneClickHuman is a web application that transforms AI-generated content into nat
 - User dashboards for users to manage subscriptions, accounts.
 - Separate admin dashboard to manage users, payments, application settings, and filter user/payment data easily.
 - Clean and responsive interface designed to work smoothly across desktop, tablet, and mobile devices.
-- Light and dark theme support to provide a more comfortable and customizable user experience.
+- Light and dark theme support to provide a better user experience.
 
 ## Tech Stack
 

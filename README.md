@@ -6,13 +6,15 @@
 OneClickHuman is a web application that transforms AI-generated content into natural, human-like text. It preserves formatting, corrects grammar, and helps bypass AI detectors such as ZeroGPT and GPTZero. The platform supports 10+ languages, and is ideal for bloggers, marketers, and content creators.
 ## Core Features
 
-- **AI to Human Content Conversion**: Instantly humanize AI-generated text.
-- **AI Detector Bypass**: Bypass tools like ZeroGPT.
-- **Multilingual Support**: 10+ languages supported in the editor.
-- **Lightning Mode**: Theme mode switching.
-- **Stripe Payments**: Secure subscription and payment processing with Stripe.
-- **User Authentication**: Secure login and subscription management.
-- **Role-based Dashboard**: Admin and user dashboards for management.
+- Convert AI-generated text into simple, natural, and human-like writing with real-time streaming responses, while also helping bypass AI detection tools like ZeroGPT.
+- Supports 10+ multiple languages with a simple and user-friendly editor, allowing users to work comfortably with content in different languages.
+- Complete user authentication system including login, registration wit Next-Auth.
+- Users can subscribe, make payments, and upgrade their plans easily through Stripe integration.
+- User dashboards for users to manage subscriptions, accounts.
+- Separate admin dashboard to manage users, payments, application settings, and filter user/payment data easily.
+- Clean and responsive interface designed to work smoothly across desktop, tablet, and mobile devices.
+- Light and dark theme support to provide a more comfortable and customizable user experience.
+
 ## Tech Stack
 
 - **Framework**: Next.js 14
